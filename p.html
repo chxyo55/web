@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สวน</title>
+    <link rel="stylesheet" href="pcss/p.css">
+</head>
+
+    <body>
+        <div class="logo1">  
+            <center> <img src="img/ปก.jpg" alt="" style="position: relative;top: 90px;"></center>
+        </div>
+            <nav>
+             <ul class="menu">
+             <li><a href ="home1.html">หน้าแรก</a></li>
+             <li><a href="khomp.html">ความเป็นมา</a></li>
+             <li><a href="p.html">พืชศึกษา</a></li>
+             <li><a href="kitja.html">ภาพกิจกรรม</a></li>
+             <li><a href="dok.html">ทะเบียนพรรณไม้</a></li>
+               </ul>
+     
+        
+            </nav>
+     
+         
+     
+     
+     <div class="slider">
+         <img class="slides active" src="img/สไลด์.jpg" alt="Image 1">
+         <img class="slides" src="img/สไลด์1.jpg" alt="Image 2">
+         <img class="slides" src="img/สไลด์2.jpg" alt="Image 3">
+     
+         <button class="nav-button prev" onclick="changeSlide(-1)">&#10094;</button>
+         <button class="nav-button next" onclick="changeSlide(1)">&#10095;</button>
+     </div>
+     
+     <div class="dots">
+         <span class="dot active-dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+     </div>
+     
+     <script>
+         let slideIndex = 1;
+         showSlides(slideIndex);
+     
+         function changeSlide(n) {
+             showSlides(slideIndex += n);
+         }
+     
+         function currentSlide(n) {
+             showSlides(slideIndex = n);
+         }
+     
+         function showSlides(n) {
+             const slides = document.getElementsByClassName("slides");
+             const dots = document.getElementsByClassName("dot");
+             
+             if (n > slides.length) { slideIndex = 1; }
+             if (n < 1) { slideIndex = slides.length; }
+     
+             for (let i = 0; i < slides.length; i++) {
+                 slides[i].style.display = "none";
+                 dots[i].className = dots[i].className.replace(" active-dot", "");
+             }
+     
+             slides[slideIndex - 1].style.display = "block";
+             dots[slideIndex - 1].className += " active-dot";
+         }
+     
+         // Automatic slide change every 5 seconds
+         setInterval(() => {
+             changeSlide(1);
+         }, 5000);
+     </script>
+    
+    <div class="logo2">
+        <img src="img/คูณ.png" alt="">
+    </div>
+    <br>
+    <br>
+    <br>
+    
+   
+    
+    <div class="container5">
+      <p class="highlight-white1"><strong>ดอกคูน </strong> (Golden Shower Tree หรือ ชื่อวิทยาศาสตร์ Cassia fistula) เป็นพืชในวงศ์ถั่ว (Fabaceae) และเป็นต้นไม้ประจำชาติของประเทศไทย มีความสำคัญทั้งในแง่สัญลักษณ์ วัฒนธรรม และการใช้งานทางการแพทย์ ดังนั้นการศึกษาดอกคูณเป็นสิ่งที่น่าสนใจในหลายแง่มุม</p><br>
+      <span class="highlight-yellow1"><h1>ลักษณะทั่วไปของดอกคูณ</h1> </span><br>
+      <p class="highlight-white2">1.ดอก  <br>
+       • สีเหลืองสดใส ออกเป็นช่อห้อยลงมาตามกิ่ง <br>
+       • ดอกแต่ละดอกมีลักษณะสมมาตร ด้านในมีเกสรตัวผู้และเกสรตัวเมียชัดเจน <br>
+       • ดอกบานเต็มที่ในช่วงฤดูร้อน (ประมาณเดือนมีนาคม-พฤษภาคม) <br><br>
+    
+        <img src="img/ดอกของดอกคูน.jpg"  alt="ดอกของดอกคูน"width=60%><br><br>
+       2.ใบ <br>
+       • ใบเป็นใบประกอบแบบขนนก มีใบย่อย 4-8 คู่ <br>
+       • สีเขียวสดและเรียบ<br>
+        <br>
+        <img src="img/ใบชองดอกคูน.jpg" alt="ใบชองดอกคูน" width="60%"> <br><br>    
+       3.ผล <br>
+       • เป็นฝักยาวทรงกระบอก มีสีดำหรือสีน้ำตาลเมื่อแก่<br>
+       • มีเมล็ดเรียงตัวในฝัก โดยมีเยื่อเหนียวหุ้มเมล็ด </p> <br>
+        <img src="img/ฝักคูน.jpg" alt="ฝักคูน" width="60%"><br><br>
+        
+        <span class="highlight-yellow1"><h1>ประโยชน์และความสำคัญ</h1> </span><br>
+         <P class="highlight-white2">1. ทางการแพทย์ <br>
+        • ฝัก: มีฤทธิ์เป็นยาระบาย<br>
+        • ราก: ใช้เป็นส่วนผสมในยาบำรุงโลหิต<br>
+        • เปลือก: มีสารฝาดสมาน ใช้รักษาแผลและแก้ท้องเสีย<br>
+        2. ทางวัฒนธรรม <br>
+       • ดอกคูณเป็นสัญลักษณ์ของความเจริญรุ่งเรือง มักใช้ในพิธีมงคลต่าง ๆ<br>
+       • เป็นดอกไม้ประจำวันสงกรานต์และสะท้อนถึงความร่มเย็นของคนไทย<br>
+       3. การตกแต่ง <br>
+       • นิยมปลูกเป็นไม้ประดับริมถนนและสวน เพราะให้ร่มเงาและดอกสวยงาม<br>
+       4. การอนุรักษ์<br>
+       • การขยายพันธุ์ส่วนใหญ่ใช้วิธีเพาะเมล็ดหรือการตอนกิ่ง เพื่อรักษาสายพันธุ์และปลูกเพิ่มในพื้นที่อนุรักษ์<br>
+       การศึกษาในมุมวิทยาศาสตร์<br>
+      • การสังเกตวงจรชีวิต: ศึกษาการงอกของเมล็ด พัฒนาการของดอก และการแพร่กระจายเมล็ด<br>
+      • การวิเคราะห์โครงสร้าง: เช่น โครงสร้างดอก การทำงานของเซลล์สืบพันธุ์ และระบบลำเลียงน้ำ-อาหาร<br>
+      • การวิจัยสมุนไพร: ศึกษาสารสำคัญในส่วนต่าง ๆ ของต้น เพื่อนำไปใช้ในทางการแพทย์<br>
+      </p>
+    </div>
+    
+    
+    
+    <div class="logo50">
+        <img src="img/กุหลาบ.png" alt="">
+    </div>
+
+    <div class="container6">
+        <p class="highlight-white1"><strong>กุหลาบ (Rose) </strong> เป็นไม้ดอกที่ได้รับความนิยมอย่างแพร่หลายทั่วโลก มีความสำคัญทั้งในเชิงพาณิชย์ วัฒนธรรม และการประดับตกแต่ง การศึกษากุหลาบในด้านพืชศึกษาช่วยให้เราเข้าใจเกี่ยวกับโครงสร้าง การสืบพันธุ์ วงจรชีวิต และการดูแลรักษาอย่างถูกวิธี</p><br>
+        <span class="highlight-yellow1"><h1>ลักษณะทั่วไปของดอกกุหลาบ</h1> </span><br>
+        <p class="highlight-white2">1.ดอก  <br>
+        • รูปทรงหลากหลาย สีสันมีตั้งแต่สีขาว ชมพู แดง ส้ม ม่วง จนถึงสีเหลือง <br>
+        • ดอกประกอบด้วยกลีบดอกเรียงซ้อนกันอย่างสวยงาม มีกลิ่นหอมเฉพาะตัวในบางสายพันธุ์ <br>
+        •  เกสรตัวผู้และเกสรตัวเมียอยู่ในดอกเดียวกัน <br><br>
+        <img src="img/ดอกของดอกกุหลาบ.jpg"  alt="ดอกของดอกกุหลาบ"width=60%><br><br>
+
+        2.ลำต้น <br>
+        • มีลักษณะตั้งตรงหรือเลื้อย<br>
+        • มีหนามแหลมเพื่อป้องกันศัตรูพืช<br>
+        <br>
+        <img src="img/ลำต้นกุหลาบ.jpg" alt="ลำต้น" width="60%"> <br><br> 
+
+        3.ใบ <br>
+        • เป็นใบประกอบแบบขนนก มีใบย่อย 3-9 ใบ <br>
+        • ใบมีขอบหยัก ลักษณะเป็นมันเงา <br>
+        <img src="img/ใบกุหลาบ.jpg" alt="ใบกุหลาบ"> <br>
+        4. ผล <br>
+        • ผลกุหลาบเรียกว่า Rose hip มีสีแดงหรือส้ม อุดมไปด้วยวิตามินซี</p> <br>
+            <img src="img/ผลดอกกุหลาบ2.jpeg" alt="ผลกุหลาบ" width="60%"><br><br>
+            
+            <span class="highlight-yellow1  "><h1>การสืบพันธุ์ของกุหลาบ</h1> </span><br>
+            <p class="highlight-white2">1. การสืบพันธุ์แบบอาศัยเพศ  <br>
+                • การผสมเกสรโดยลม แมลง หรือมนุษย์ <br>
+                • เมล็ดที่ได้จากการผสมสามารถนำไปปลูกเพื่อสร้างสายพันธุ์ใหม่ <br>
+                <br><br>
+                
+        
+                2.การสืบพันธุ์แบบไม่อาศัยเพศ<br>
+                • การปักชำกิ่ง: วิธีที่นิยมเพื่อให้ได้ต้นใหม่เหมือนต้นแม่ <br>
+                • การตอนกิ่ง: ใช้สำหรับสายพันธุ์ที่ต้องการคุณภาพสูง <br>
+                • การเสียบยอด: ช่วยเพิ่มความแข็งแรงให้ลำต้น<br>
+                <img src="" alt="" width="60%"> <br><br> 
+
+
+
+                
+            <span class="highlight-yellow1"><h1>ประโยชน์ของกุหลาบ</h1></span> <br>
+             <P class="highlight-white2">1. ประโยชน์เชิงพาณิชย์ <br>
+            • ใช้ในอุตสาหกรรมผลิตน้ำหอมและน้ำมันหอมระเหย <br>
+            • ใช้ในงานจัดดอกไม้ งานแต่งงาน และพิธีกรรมต่าง ๆ <br>
+         2. ทางสมุนไพร <br>
+         • กลีบดอก: ช่วยบำรุงผิวพรรณ และลดการอักเสบ <br>
+         • ผลกุหลาบ (Rose hip): มีสารต้านอนุมูลอิสระและช่วยบำรุงสุขภาพ <br>
+         3. การตกแต่ง <br>
+         • ใช้ปลูกประดับสวนหรือภายในบ้านเพื่อความสวยงาม <br>
+         • เป็นไม้ดอกสัญลักษณ์ของความรักและความงาม<br>
+        
+
+         
+         <span class="highlight-yellow1"><h1>การศึกษาในมุมวิทยาศาสตร์</h1> </span><br>
+         <p class="highlight-white1">1.การปรับปรุงพันธุ์ <br>
+        • การศึกษาสายพันธุ์กุหลาบเพื่อพัฒนาสีสัน รูปทรง และความทนทานต่อโรค <br>
+         2. การวิเคราะห์โครงสร้างดอก <br>
+         • ศึกษากลีบดอก โครงสร้างเกสร และระบบการผสมพันธุ์ <br>
+         3. การปลูกและดูแล <br>
+         • ศึกษาปัจจัยที่มีผลต่อการเจริญเติบโต เช่น แสง น้ำ ดิน และปุ๋ย <br>
+         • การควบคุมศัตรูพืช เช่น โรคราเพลิง เพลี้ย และแมลง <br>
+
+        </p>
+    </div>
+
+    <div class="mali">
+        <img src="img/มะลิ.jpg" alt="">
+    </div>
+    <div class="container7mali">
+        <p class="highlight-white1"><strong>มะลิ (Jasmine)</strong>  เป็นไม้ดอกที่มีกลิ่นหอมละมุนและมีความสำคัญในวัฒนธรรมไทย รวมถึงการใช้ในเชิงสมุนไพรและการตกแต่ง โดยเฉพาะอย่างยิ่ง มะลิเป็นสัญลักษณ์ของความรักที่บริสุทธิ์และใช้เป็นดอกไม้ประจำวันแม่ในประเทศไทย</p><br>
+        <span class="highlight-yellow1"><h1>ลักษณะทั่วไปของมะลิ</h1> </span><br>
+        <p class="highlight-white2">1.ดอก  <br>
+            • สีขาวบริสุทธิ์ รูปทรงกลีบดอกแตกต่างตามสายพันธุ์ <br>
+            • กลิ่นหอมเด่นชัด โดยเฉพาะในช่วงเย็นและกลางคืน<br> <br>
+        <img src="img/ผลมะลิ.jpg"  alt="ดอกมะลิ"width=60%><br><br>
+
+        2.ลำต้น <br>
+        • ไม้พุ่มขนาดเล็กถึงกลาง บางชนิดเลื้อย <br>
+        • ลำต้นและกิ่งมีสีเขียวหรือน้ำตาล<br> <br>
+        <img src="img/ต้นมะลิ.jpg" alt="ลำต้น" width="60%"> <br><br> 
+
+        3.ใบ <br>
+        • ใบเดี่ยว สีเขียวเข้ม เป็นมันเงา <br>
+        • รูปทรงรีหรือไข่<br>
+        <br>
+        <img src="img/ใบมะลิ.jpg" alt="ใบของมะลิ" width="60%"> <br><br>    
+
+        4.ผล <br>
+        • ผลเล็ก รูปทรงกลม สีดำหรือม่วงเมื่อสุก</p> <br>
+            <img src="img/ผลมะลิ.jpg" alt="ผลมะ" width="60%"><br><br>
+            
+            <span class="highlight-yellow1"><h1>การสืบพันธุ์ของมะลิ</h1> </span><br>
+        <P class="highlight-white2">1.การสืบพันธุ์แบบอาศัยเพศ<br>
+            • การผสมเกสรโดยลม หรือแมลง เช่น ผึ้ง <br>
+            • เมล็ดที่ได้สามารถนำไปเพาะปลูกได้ <br>
+            2.การสืบพันธุ์แบบไม่อาศัยเพศ<br>
+            • การปักชำกิ่ง: นิยมใช้มากที่สุด <br>
+            • การตอนกิ่ง: ช่วยให้ต้นใหม่มีคุณภาพดีและแข็งแรง <br> <br>
+
+            
+            <span class="highlight-yellow1"><h1>ประโยชน์ของมะลิ</h1></span> <br>
+            <P class="highlight-white2">1.ทางวัฒนธรรม <br>
+                • ใช้ในพิธีกรรมทางศาสนา เช่น พวงมาลัยบูชาพระ<br>
+                • เป็นสัญลักษณ์ของความบริสุทธิ์และความกตัญญู <br>
+        2. ด้านสมุนไพร <br>
+        • ดอก: ช่วยลดความเครียด ทำเป็นน้ำมันหอมระเหย และบำรุงหัวใจ<br>
+        • ใบ: ใช้รักษาแผลสด และแก้ไข้<br>
+        • ราก: ใช้แก้ไอ แก้อาการปวดเมื่อย <br>
+        3. ด้านความงาม <br>
+        • น้ำมันหอมระเหยจากมะลินิยมใช้ในอุตสาหกรรมน้ำหอมและเครื่องสำอาง <br>
+        4.การปลูกเพื่อความสวยงาม<br>
+        • นิยมปลูกเป็นไม้ประดับในสวนหรือปลูกในกระถาง <br>
+        </p>
+        
+        
+    </div>
+  
+
+
+</body>
+</html>

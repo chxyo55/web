@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สวน</title>
+    <link rel="stylesheet" href="stylehome/khom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="logo">  
+        <center> <img src="img/ปก.jpg" alt="" style="position: relative;top: 90px;"></center>
+     </div>
+        <nav>
+     <ul class="menu">
+         <li><a href ="home1.html">หน้าแรก</a></li>
+         <li><a href="khomp.html">ความเป็นมา</a></li>
+         <li><a href="พืชศึกษา.html">พืชศึกษา</a></li>
+         <li><a href="การดำเนินงานสวนพฤกษศาสตร์โรงเรียน.html">งานสวนพฤกษศาสตร์โรงเรียน</a></li>
+         <li><a href="dok.html">ทะเบียนพรรณไม้</a></li>
+     </ul>
+ 
+    
+ </nav>
+ 
+     
+ 
+ 
+ <div class="slider">
+     <img class="slides active" src="img/สไลด์.jpg" alt="Image 1">
+     <img class="slides" src="img/สไลด์1.jpg" alt="Image 2">
+     <img class="slides" src="img/สไลด์2.jpg" alt="Image 3">
+ 
+     <button class="nav-button prev" onclick="changeSlide(-1)">&#10094;</button>
+     <button class="nav-button next" onclick="changeSlide(1)">&#10095;</button>
+ </div>
+ 
+ <div class="dots">
+     <span class="dot active-dot" onclick="currentSlide(1)"></span>
+     <span class="dot" onclick="currentSlide(2)"></span>
+     <span class="dot" onclick="currentSlide(3)"></span>
+ </div>
+ 
+ <script>
+     let slideIndex = 1;
+     showSlides(slideIndex);
+ 
+     function changeSlide(n) {
+         showSlides(slideIndex += n);
+     }
+ 
+     function currentSlide(n) {
+         showSlides(slideIndex = n);
+     }
+ 
+     function showSlides(n) {
+         const slides = document.getElementsByClassName("slides");
+         const dots = document.getElementsByClassName("dot");
+         
+         if (n > slides.length) { slideIndex = 1; }
+         if (n < 1) { slideIndex = slides.length; }
+ 
+         for (let i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+             dots[i].className = dots[i].className.replace(" active-dot", "");
+         }
+ 
+         slides[slideIndex - 1].style.display = "block";
+         dots[slideIndex - 1].className += " active-dot";
+     }
+ 
+     // Automatic slide change every 5 seconds
+     setInterval(() => {
+         changeSlide(1);
+     }, 5000);
+ </script>
+
+
+
+    <div class="container">
+        <h1>ความเป็นมาของสวนพฤกษศาสตร์</h1>
+        
+        <div class="image-container">
+            <img src="img/khompen.jpg" alt="แผนภาพสวนพฤกษศาสตร์" width="60%">
+        </div>
+        
+        <div class="content">
+            <p><strong>สวนพฤกษศาสตร์</strong> คือ แหล่งที่รวบรวมพันธุ์พืชชนิดต่าง ๆ ที่มีชีวิต จัดปลูกตามความเหมาะสมกับสภาพถิ่นอาศัยเดิม มีห้องสมุด สถานที่เก็บรวบรวมตัวอย่างพรรณไม้ รักษาสภาพ อาจเป็นตัวอย่างแห้ง ตัวอย่างดอง หรือเก็บรักษาโดยวิธีอื่นๆ พันธุ์พืชที่ทำการเก็บรวบรวมไว้นั้น จะเป็นแหล่งข้อมูลและเผยแพร่ความรู้ นอกจากนี้สามารถใช้เป็นแหล่งพักผ่อนหย่อนใจ</p>
+            <br>
+            <p><strong>สวนพฤกษศาสตร์โรงเรียน </strong> คือ ทุกสิ่งทุกอย่างที่มีอยู่ในโรงเรียน ที่ใช้เพื่อการเรียนรู้โดยมีพืชเป็นปัจจัยหลัก ชีวภาพอื่นเป็นปัจจัยรอง กายภาพเป็นปัจจัยเสริม และวัสดุอุปกรณ์เป็นปัจจัยประกอบ</p>
+            <br>
+            <p><strong>งานสวนพฤกษศาสตร์โรงเรียน</strong>คือ งานสร้างจิตสำนึกในการอนุรักษ์พันธุกรรมพืช ทรัพยากรชีวภาพ และกายภาพ โดยมีการสัมผัส การเรียนรู้ การสร้างและปลูกฝังคุณธรรม การเสริมสร้างปัญญาและภูมิปัญญา</p>
+            <br>
+            <p><strong>วัตถุประสงค์ของการดำเนินงานสวนพฤกษศาสตร์โรงเรียน</strong>เพื่อสร้างจิตสำนึกในการอนุรักษ์พันธุกรรมพืชและทรัพยากร</p>
+            <br>
+            <p><strong> ผลของการดำเนินงานสวนพฤกษศาสตร์โรงเรียน</strong></p>
+            <ul>
+                <li>เกิดจิตสำนึกในการอนุรักษ์พันธุกรรมพืช และทรัพยากร</li>
+                <li>มีข้อมูลการเรียนรู้ทรัพยากรที่สามารถสื่อสานได้ทั่วประเทศ</li>
+                <li>มีคุณธรรมจริยธรรมเป็นฐานของวิทยาการและปัญญา</li>
+                <li>เกิดเกื้อหนุนรักษ์ พัฒนาบนฐานคุณธรรม</li>
+                <li>เสริมสร้างการเรียนรู้เบื้องฐาน ปรัชญาเศรษฐกิจพอเพียง</li>
+            </ul>
+            
+        </div>
+
+    </div>
+
+ 
+
+
+</body>
+</html>

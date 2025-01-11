@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+nav {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #000000; */
+    padding: 10px;
+    
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+body {
+    background-color: #800080 ;
+}
+
+
+
+
+.logo1 img {
+    width: 1000px;
+    height: 240px;
+    text-align:center;
+   
+}
+
+.menu li {
+    margin-top: 90px;
+    text-align: right; 
+   margin-left: 2px;
+}
+
+.menu li a {
+    text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+    background: #ff00d4; /* สีพื้นหลัง */
+    border-radius: 7px 7px 0 0; /* มุมโค้ง */
+    display: block;
+    height: 41px;
+    width: 200px;
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    line-height: 41px; /* จัดข้อความให้แนวตั้งตรงกลาง */
+    font-family: 'Thasadith', sans-serif; /* เพิ่มฟอนต์ Thasadith */
+    font-size: 18px; /* ขนาดตัวอักษร */
+    color: white; /* สีตัวอักษร */
+    font-weight: 400; /* น้ำหนักฟอนต์ */
+    transition: background-color 0.3s, color 0.3s; /* เพิ่มเอฟเฟกต์การเปลี่ยนสี */
+}
+.menu li a:hover {
+    background: #e100b2; /* เปลี่ยนสีพื้นหลังเมื่อชี้ */
+    color: #ffe600; /* เปลี่ยนสีตัวอักษรเมื่อชี้ */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.slider {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.slides {
+    display: none;
+    width: 100%;
+    height: 500px;
+}
+
+.active {
+    display: block;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: #717171;
+}
+
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    color: #ffffff;
+    font-family: 'Krub', sans-serif;
+}
+
+
+
+.container1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.section {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #8b63d6;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.section img {
+    max-width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+}

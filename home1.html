@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>งานสวนพฤษศาสตร์โรงเรียน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+    
+        <div class="logo">  
+       <center> <img src="img/ปกเว็บ.png" alt="" style="position: relative;top: 90px;"></center>
+    </div>
+       <nav>
+    <ul class="menu">
+        <li><a href ="home1.html">หน้าแรก</a></li>
+        <li><a href="khomp.html">ความเป็นมา</a></li>
+        <li><a href="พืชศึกษา.html">พืชศึกษา</a></li>
+        <li><a href="การดำเนินงานสวนพฤกษศาสตร์โรงเรียน.html">งานสวนพฤกษศาสตร์โรงเรียน</a></li>
+        <li><a href="dok.html">ทะเบียนพรรณไม้</a></li>
+    </ul>
+
+   
+</nav>
+<div class="marquee">
+    <div class="marquee-text">ยินดีต้อนรับเข้าสู่งานสวนพฤกษศาสตร์โรงเรียนวิทยาลัยเทคนิคชุมแพ</div>
+</div>
+    
+<!-- สไลด์รูป -->
+
+<div class="slider">
+    <img class="slides active" src="img/สไลด์.jpg" alt="Image 1">
+    <img class="slides" src="img/สไลด์1.jpg" alt="Image 2">
+    <img class="slides" src="img/สไลด์2.jpg" alt="Image 3">
+    <img class="slides" src="img/สไลด์2.jpg" alt="Image 3">
+
+    <button class="nav-button prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="nav-button next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<div class="dots">
+    <span class="dot active-dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function changeSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        const slides = document.getElementsByClassName("slides");
+        const dots = document.getElementsByClassName("dot");
+        
+        if (n > slides.length) { slideIndex = 1; }
+        if (n < 1) { slideIndex = slides.length; }
+
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active-dot";
+    }
+
+    // Automatic slide change every 5 seconds
+    setInterval(() => {
+        changeSlide(1);
+    }, 5000);
+</script>
+<!-- สไลด์รูป -->
+<div class="gallery1">
+   <center> <img src="img/แจ่มจันทร์_ผังสรุปงานสวน-1.png" alt=""></center>
+</div>
+
+<!-- ภาพกิจกรรม -->
+<h1>ภาพกิจกรรม</h1>
+<div class="gallery">
+  <a href="gallerykit1.html" class="card">
+     <img src="img/รร.บ้านวังหว้า 1.jpg" alt="">
+     <p>วิทยากร โรงเรียนบ้านวังหว้า อ.บ้านแฮด จ.ขอนแก่น</p>
+  </a>
+  <a href="galleryPungtuipattanasuksa School.html" class="card">
+      <img src="img/Pungtuipattanasuksa School001.jpg" alt="">
+      <p>วิทยากร โรงเรียนพังทุยพัฒนศึกษา อ.น้ำพอง จ.ขอนแก่น</p>
+  </a>
+  <a href="Kanjanapisek.html" class="card">
+      <img src="img/Kanjanapisek001.jpg" alt="">
+      <p>อบรมแนวทางการดำเนินงาน งานสวนพฤกษศาสตร์โรงเรียน วิทยาลัยกาญจนาภิเษกหนองจอก กทม.</p>
+  </a>
+ 
+</div>
+<!-- ภาพกิจกรรม -->
+<h1>คู่มือสวนพฤกษศาสตร์ ฉบับเต็ม</h1>
+<div class="container90">
+    <div class="column">
+        <h3>เกี่ยวกับงานสวนพฤกษศาสตร์โรงเรียน</h3>
+        <ul>
+            <li><a href="https://www.rspg.or.th/documents/index.htm"target="_blank">เอกสารโครงการ</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/school_bot_5.htm"target="_blank">จุดสารสวนพฤกษศาสตร์โรงเรียน</a></li>
+            <li><a href="https://www.rspg.or.th/experimental_project/index.htm"target="_blank">โครงการทดลองปลูกพืชพรรณ</a></li>
+            <li><a href="https://www.rspg.or.th/plants_data/index.htm"target="_blank">ข้อมูลพรรณไม้</a></li>
+            <li><a href="https://www.rspg.or.th/activities/index.htm"target="_blank">กิจกรรมโครงการ</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/index.htm"target="_blank">ภาพข่าวและกิจกรรม</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/school_bot_3.htm"target="_blank">สมาชิกและฐานข้อมูลสวนพฤกษศาสตร์</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/school_bot_4.htm"target="_blank">ที่ปรึกษาและผู้ประสานงาน</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/school_bot_9.htm"target="_blank">การวาดภาพทางพฤกษศาสตร์</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/school_bot_10.htm"target="_blank">ลิงก์ที่เกี่ยวข้อง</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/sch_member.htm"target="_blank">สมาชิกสวนพฤกษศาสตร์โรงเรียนต่าง ๆ</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/pdf/sch_re001.pdf"target="_blank">สมาชิกใบพรรณราชานาม 2540-2555</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/pdf/sch_re003.pdf"target="_blank">สมาชิกใบลักษณะดิบชั้น 2 2540-2555</a></li>
+        </ul>
+    </div>
+    <div class="column">
+        <h3>เอกสารงานสวนพฤกษศาสตร์โรงเรียน</h3>
+        <ul>
+            <li><a href="https://www.rspg.or.th/botanical_school/instruction_2551/index.html"target="_blank">คู่มือสวนพฤกษศาสตร์โรงเรียน</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/bot_doc/bot_doc2.htm"target="_blank">วิเคราะห์ความสอดคล้อง 8 กลุ่มสาระ</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/pdf/%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%A5%E0%B8%B3%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89%20%205%20%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%20%204%20%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B0.pdf"target="_blank">รวมลำดับการเรียนรู้ 5 องค์ประกอบ</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/bot_doc/bot_doc3.htm"target="_blank">ใบงาน 5 องค์ประกอบ (ตามคู่มือปี 2549)</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/bot_doc/bot_doc4.htm"target="_blank">ใบงานองค์ประกอบที่ 1 และ 2 (ใช้ฝึกอบรม)</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/bot_doc/bot_doc5.htm"target="_blank">ใบงาน 3 สาระ (ใช้ฝึกอบรม)</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/bot_doc/bot_doc6.htm"target="_blank">ใบงานแผนบริหารและการจัดการ (ใช้ฝึกอบรม)</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/bot_doc/bot_doc7.htm"target="_blank">ใบความรู้ข้อมูลพรรณไม้</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/pdf/%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B9%84%E0%B8%A1%E0%B9%89.pdf"target="_blank">ชื่อพรรณไม้</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/bot_doc/bot_doc10.htm"target="_blank">TPN06  ล่าสุด (ไฟล์หาชื่อพรรณไม้ อ.เต็ม สมิตินันท์) </a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/pdf/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%203%20%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%203%20%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B0%20%28PDF%29.pdf"target="_blank">แบบประเมินสถานศึกษา ๓ ด้าน ๓ สาระ </a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/bot_doc/bot_doc9.htm"target="_blank">เอกสาร ก.๗-๐๐๓ ฉบับใหม่ </a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/pdf/%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3.pdf"target="_blank">คู่มือการประเมิน ด้านที่ ๔ ความถูกต้องทางวิชาการด้านพฤกษศาสตร์ </a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/pdf/%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%A4%E0%B8%81%E0%B8%A9%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C.pdf"target="_blank">แนวทางการถ่ายภาพทางพฤกษศาสตร์</a></li>
+            <li><a href="">คู่มือการเก็บและรักษาตัวอย่างพรรณไม้</a></li>
+            <li><a href="">ข้อเสนอแนะจากนักพฤกษศาสตร์ในการเก็บตัวอย่างพรรณไม้</a></li>
+            <li><a href="">ป้ายข้อมูลติดตัวอย่างพรรณไม้</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/pdf/%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B3%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B9%84%E0%B8%A1%E0%B9%89.pdf">คู่มือการทำทะเบียนพรรณไม้</a></li>
+            <li><a href=""target="_blank">ใบงานทะเบียนพรรณไม้ ก.๗-๐๐๕</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/pdf/%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B3%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B9%84%E0%B8%A1%E0%B9%89.pdf">คู่มือการทำป้ายชื่อพรรณไม้</a></li>
+            <li><a href=""target="_blank">แบบฟอร์มส่งด้านที่ ๔ ความถูกต้องทางวิชาการด้านพฤกษศาสตร์</a></li>
+            <li><a href="https://www.rspg.or.th/botanical_school/bot_doc/bot_doc8.htm"target="_blank">แนวทางการทำรายงานพืชศึกษาและสามสาระ</a></li>
+        </ul>
+    </div>
+    <div class="column">
+        <h3>งานสวนพฤกษศาสตร์โรงเรียนวิทยาลัยเทคนิคชุมแพ</h3>
+        <ul>
+            <li><a href="#">ข้อมูลงานสวนพฤกษศาสตร์</a></li>
+            <li><a href="#">ค้นหาชื่อพรรณไม้</a></li>
+            <li><a href="#">แผนการจัดการเรียนรู้รวมการสวนพฤกษศาสตร์</a></li>
+            <li><a href="#">ภาพกิจกรรมงานสวนพฤกษศาสตร์โรงเรียน</a></li>
+            <li><a href="#">แผ่นพันเผยแพร่</a></li>
+            <li><a href="#">วิดีทัศน์กิจกรรม</a></li>
+            <li><a href="#">5 องค์ประกอบของสวนพฤกษศาสตร์</a></li>
+        </ul>
+    </div>
+</div>
+<div class="header12">
+    <h1>&lt;&lt;&lt; ลิงค์เว็บไซต์ที่สำคัญ &gt;&gt;&gt;</h1>
+  </div>
+  <div class="banner">
+    <!-- ใส่ URL รูปภาพแทน "image1.jpg" และ "image2.jpg" -->
+   <a href="https://rspg.or.th/index_sub.html"target="_blank"> <img src="img/รูป.png" alt="รูปภาพ 1">
+   </a><br>
+    <a href="https://www.rspg.or.th/botanical_school/neo_sbg/index.html"target="_blank"><img src="img/อพ.สธ.png" alt="รูปภาพ 2">
+    </a>
+  </div>
+ 
+  <div class="footer">
+    <p>งานสวนพฤกษศาสตร์โรงเรียน วิทยาลัยเทคนิคชุมแพ</p>
+    <p>271 หมู่ 14  ตำบลหนองไผ่ อำเภอชุมแพ จังหวัดขอนแก่น 40130</p>
+  </div>
+</body>
+
+
+
+
+</body>
+</html>

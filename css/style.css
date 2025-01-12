@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+      body {
+          font-family: 'Thasadith', sans-serif;
+          line-height: 1.6;
+          background: #800080;
+          color: #333;
+      }
+
+      header {
+          background: #4CAF50;
+          color: #fff;
+          padding: 10px 0;
+          text-align: center;
+          
+      }
+
+      header img {
+          max-width: 100%;
+          height: auto;
+          width: 100%;
+      }
+
+      nav {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  position: relative;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+      nav ul li a:hover {
+          background: #4CAF50;
+          border-radius: 5px;
+          color: #ff9800;
+      }
+
+/* Sticky Effect */
+nav.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #444; /* เปลี่ยนสีเมื่อ sticky */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* เพิ่มเงา */
+}
+
+/* Sections */
+.section {
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+/* java */
+.slider {
+    position: relative;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+.slider img {
+  width: 100%; /* ปรับภาพให้ตอบสนอง */
+  height: auto;
+}
+.slides.active {
+            display: block;
+        }
+  
+  
+
+
+.slides {
+  display: none;
+  width: 100%;
+}
+.slides img {
+    width: 100%;
+    height: 100%; /* ให้ภาพเต็มความสูงของสไลเดอร์ */
+    object-fit: cover; /* ให้ภาพครอบคลุมพื้นที่โดยไม่บิดเบี้ยว */
+}
+
+
+
+.active {
+    display: block;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: #717171;
+}
+/* java */
+
+.container1 {
+    padding: 20px 15px;
+    background-color: #fff;
+    position: absolute;
+    right: 100px;
+    top: 1100px;
+    width: 90px;
+    height: calc(50% - 1px);
+    border-radius: 8px;
+   
+   
+}
+.container1 h2 {
+    text-decoration: none;
+    
+    
+}
+
+
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 36px;
+  color: #ffeb3b; /* สีเหลือง */
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: hidden;
+  width: 250px;
+  text-decoration: none; /* ลบเส้นใต้ลิงก์ */
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card p {
+  padding: 10px;
+  font-size: 18px;
+}
+.gallery1  img {
+   height: auto;
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+    color: yellow;
+}
+.container90 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.column {
+    width: 18%;
+}
+ul {
+    list-style-type: square;
+}
+ul li {
+    margin: 5px 0;
+}
+ul li a {
+    color: lightblue;
+    text-decoration: none;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
+
+   
+
+body {
+    font-family: Arial, sans-serif;
+    
+    color: white;
+    line-height: 1.6;
+    margin: 20px;
+   
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+  .header12 {
+    margin: 20px 0;
+  }
+  .header12 h1 {
+    font-size: 24px;
+  }
+  .banner {
+    margin: 20px auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* ระยะห่างระหว่างรูปภาพ */
+    max-width: 70%;
+    
+    
+  }
+  .banner img {
+    /* ขนาดรูปภาพแต่ละรูป (48% เพื่อให้เหลือระยะห่างระหว่างกัน) */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* แต่ละรูปภาพกินพื้นที่ 50% */
+    max-width: px; /* จำกัดความกว้างสูงสุด */
+    display: block;
+  }
+  .navigation {
+    margin: 20px 0;
+  }
+  .navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+ /* Marquee */
+  .marquee {
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+ /* Marquee */
+
+ /* Responsive Design */
+ @media screen and (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  .slider {
+      height: auto;
+  }
+}
+
+/* การปรับรูปแบบของ container ให้เหมาะสมกับมือถือ */
+/* สำหรับหน้าจอที่มีความกว้างไม่เกิน 768px */
+@media (max-width: 768px) {
+  .container90 {
+    display: flex;
+    flex-direction: column;  /* เปลี่ยนเป็นแนวตั้ง */
+    padding: 10px;
+    gap: 20px; /* ระยะห่างระหว่างคอลัมน์ */
+  }
+
+  .column {
+    width: 100%;  /* ทำให้คอลัมน์เต็มความกว้าง */
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างระหว่างคอลัมน์ */
+  }
+}
+
+/* สำหรับหน้าจอที่มีความกว้างมากกว่า 768px */
+@media (min-width: 769px) {
+  .container90 {
+    display: flex;
+    flex-direction: row;  /* เปลี่ยนเป็นแนวนอน */
+    gap: 20px; /* ระยะห่างระหว่างคอลัมน์ */
+    padding: 20px;
+  }
+
+  .column {
+    width: 32%; /* ทำให้คอลัมน์มีความกว้าง 32% */
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างระหว่างคอลัมน์ */
+  }
+}
